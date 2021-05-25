@@ -4,11 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Smart Watch</title>
 </head>
 <body>
-    <h1>
-        This is a header.
-    </h1>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h1>Android</h1>
+                    <h2>Smart Watch Demo</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-3">
+               <img id="color-smart-watch" class="smart-watch" src="images/black-smart-watch.png" alt="black smart watch">
+               <div id="time-text"></div>
+               <div id="heart-rate-num"></div>
+            </div>
+            <div class="col">
+                <h3>FitBit 19 - The Smartest Watch</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium repellat quae consectetur repudiandae iste obcaecati laboriosam incidunt quas voluptas voluptatibus.</p>
+                <p>Select Color</p>
+                <div id="black-watch-box"></div>
+                <div id="red-watch-box"></div>
+                <div id="purple-watch-box"></div>
+                <div id="burgandy-watch-box"></div>
+                <div id="pink-watch-box"></div>
+                <p>Features</p>
+                <button id="time" class="btn btn-secondary">Time</button>
+                <button id="heart-rate" class="btn btn-secondary">Heart Rate</button>
+                <button class="btn btn-warning">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/color-change.js"></script>
 </body>
 </html>
